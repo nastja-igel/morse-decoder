@@ -41,7 +41,7 @@ function decode(expr) {
     const array = [];
 
     for (let i = 0; i < expr.length - 1; i += 10) {
-        array.push(MORSE_TABLE [str
+        array.push(MORSE_TABLE [expr
                 .slice(i, i + 10)
                 .replace(/00/g, "")
                 .replace(/11/g, "-")
